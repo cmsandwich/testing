@@ -407,7 +407,7 @@ window.gibinit = function() {
   var gibOptions = [
     {
       id: 'gibEnabled',
-      label: 'Gib Watcher',
+      label: 'OOS Watcher',
       checked: true,
       click: function(event) {
         var status = !window.gibSettings.enabled;
@@ -423,7 +423,7 @@ window.gibinit = function() {
     },
     {
       id: 'gibSoundAlerts',
-      label: 'Gib Sound Alerts',
+      label: 'OOS Sound Alerts',
       checked: true,
       click: function(event) {
         var status = !window.gibSettings.alerts;
