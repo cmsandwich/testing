@@ -362,7 +362,7 @@ window.gibinit = function() {
   var gibStyles = "#gib input[type='checkbox'] { cursor: pointer; position: relative; } #gib input[type='checkbox']::before { content: ''; height: 25px; width: 25px; background-color: #fff; left: -10px; top: -6px; position: absolute; border-radius: 50%; } #gib input[type='checkbox']:checked::after { content: ''; height: 19px; width: 19px; background-color: #4face0; position: absolute; top: -3px; left: -7px; border-radius: 50%; }";
 
   var wrapper = gib.createElement('div', 'gib', {
-    backgroundColor: window.gibRetailer == 'target' ? 'rgba(64,0,77,0.9)' : 'rgba(0,0,0,0.9)',
+    backgroundColor: window.gibRetailer == 'target' ? 'rgba(102,25,255,0.9)' : 'rgba(0,0,0,0.9)',
     position: 'fixed',
     top: '0px',
     zIndex: 99999,
