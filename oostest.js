@@ -296,11 +296,11 @@ window.gibinit = function() {
   };
 
   var gib = {
-    GIB_VERSION:    '2.2.7',
+    GIB_VERSION:    '1.0.1',
     PRODUCT_UPC:    detectUPC(),
     PRODUCT_TITLE:  detectProductName(),
 
-    refreshSeconds: window.gibRetailer == 'gamestop' ? 60 : 4,
+    refreshSeconds: window.gibRetailer == 'gamestop' ? 60 : 5,
 
     createElement: function(tag, id, styles) {
       var node = document.createElement(tag);
@@ -383,7 +383,7 @@ window.gibinit = function() {
     color: '#fff',
     fontSize: '12px'
   });
-  version.innerText = 'gib version: ' + gib.GIB_VERSION;
+  version.innerText = 'oos version: ' + gib.GIB_VERSION;
   wrapper.appendChild(version);
 
   var title = gib.createElement('h1', 'gib--title', {
