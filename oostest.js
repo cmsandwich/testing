@@ -296,7 +296,7 @@ window.gibinit = function() {
   };
 
   var gib = {
-    OOS_VERSION:    '2.1.0',
+    GIB_VERSION:    '2.2.7',
     PRODUCT_UPC:    detectUPC(),
     PRODUCT_TITLE:  detectProductName(),
 
