@@ -208,7 +208,7 @@ window.gibinit = function() {
       window.gibSoundLoopSource = source;
 
       if (duration > 0) {
-        setTimeout(window.gibStopSound, (duration * 100));
+        setTimeout(window.gibStopSound, (duration * 1000));
       }
     }
 
