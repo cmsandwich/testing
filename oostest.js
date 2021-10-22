@@ -173,7 +173,7 @@ window.gibinit = function() {
 
   function loadSound() {
     var request = new XMLHttpRequest();
-    request.open('GET', 'https://flukeout.github.io/simple-sounds/sounds/dead.wav', true);
+    request.open('GET', 'https://flukeout.github.io/simple-sounds/sounds/jump.wav', true);
     request.responseType = 'arraybuffer';
     request.onload = function() {
       window.gibSoundContext.decodeAudioData(request.response, function(nb) {
