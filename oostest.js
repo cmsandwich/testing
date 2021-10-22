@@ -55,7 +55,7 @@ window.gibinit = function() {
 
   function target_addToCart(DEBUG_NODE, UPC) {
     var cartUrl = 'https://carts.target.com/web_checkouts/v1/cart_items?field_groups=CART%2CCART_ITEMS%2CSUMMARY&key=feaf228eb2777fd3eee0fd5192ae7107d6224b39';
-    var cart = {"cart_type":"REGULAR","channel_id":"10","shopping_context":"DIGITAL","cart_item":{"tcin":UPC,"quantity":7,"item_channel_id":"10"},"fulfillment":{"fulfillment_test_mode":"grocery_opu_team_member_test"}};
+    var cart = {"cart_type":"REGULAR","channel_id":"10","shopping_context":"DIGITAL","cart_item":{"tcin":UPC,"quantity":4,"item_channel_id":"10"},"fulfillment":{"fulfillment_test_mode":"grocery_opu_team_member_test"}};
     
     DEBUG_NODE.innerText = 'Attempting Cart Add...';
 
@@ -76,14 +76,7 @@ window.gibinit = function() {
         window.gibWatcherDisable();
         window.gibSoundTrigger(4, true);
         return false;
-      }
-
-      if (window.gibSettings.alerts) {
-        window.gibWatcherDisable();
-        DEBUG_NODE.innerText = 'THIS PRODUCT IS IN YOUR CART!! CLICK CONTINUE!!';
-        document.getElementById('gib--continue').style.display = 'block';
-        document.getElementById('gib--settings').style.display = 'none';
-        window.gibSoundTrigger(-1);
+      
       } else {
         window.gibSoundTrigger(0, true);
         window.gibWatcherDisable();
@@ -215,7 +208,7 @@ window.gibinit = function() {
       window.gibSoundLoopSource = source;
 
       if (duration > 0) {
-        setTimeout(window.gibStopSound, (duration * 1000));
+        setTimeout(window.gibStopSound, (duration * 500));
       }
     }
 
@@ -307,7 +300,7 @@ window.gibinit = function() {
     PRODUCT_UPC:    detectUPC(),
     PRODUCT_TITLE:  detectProductName(),
 
-    refreshSeconds: window.gibRetailer == 'gamestop' ? 60 : 10,
+    refreshSeconds: window.gibRetailer == 'gamestop' ? 60 : 5,
 
     createElement: function(tag, id, styles) {
       var node = document.createElement(tag);
