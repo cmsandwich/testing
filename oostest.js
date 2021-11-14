@@ -296,7 +296,7 @@ window.gibinit = function() {
   };
 
   var gib = {
-    GIB_VERSION:    '1.0.1',
+    GIB_VERSION:    '1.1.1',
     PRODUCT_UPC:    detectUPC(),
     PRODUCT_TITLE:  detectProductName(),
 
@@ -407,7 +407,7 @@ window.gibinit = function() {
   var gibOptions = [
     {
       id: 'gibEnabled',
-      label: 'OOS Watcher',
+      label: 'OOS Pickup',
       checked: true,
       click: function(event) {
         var status = !window.gibSettings.enabled;
